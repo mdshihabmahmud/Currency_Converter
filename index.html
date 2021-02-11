@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Currency Converter</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.one{
+			background-image: url(img/pic1.jpg);
+			height: 654px;
+		}
+		.two{
+			background-image: url(img/pic2.jpg);
+			height: 100px;
+			text-align: center;
+		}
+		.btn1{
+              height: 100px;
+              width: 300px;
+              font-size: 30px;
+              border-radius: 80px;
+              background-color: #5B8575;
+              background-image: url(img/pic4.png);
+              color: white;
+		}
+		.content{
+			background-image: url(img/pic3.jpg);
+			height: 470px;
+			text-align: center;
+			margin: auto;
+		}
+		.frm1{
+			text-align: center;
+			margin: auto 300px;
+			padding-top: 100px;
+		}
+		
+		td{
+			color: white;
+			font-size: 20px;
+		}
+		td,input{
+			font-size: 15px;
+		}
+		.footer{
+			height: 80px;
+			text-align: center;
+		}
+
+  .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+	</style>
+</head>
+<body>
+<div class="one">
+	<div class="two">
+		<button class="btn1">Currency Converter</button>
+	</div>
+<div class="content">
+	
+<form class="frm1" name="converter">	
+<table style="text-align: center; margin: auto;" border="2px solid">
+    
+<tr>
+<td colspan="2"><b>Bangladeshi Currency (BDT):</b> 
+<input id="currency" type="number" name ="bdt" placeholder="BDT"> 
+<input type="button" Value = "Convert" onclick="currencyConverter(converter.bdt.value)">
+</td>
+</tr>
+
+
+<tr>   
+<td><b> USD (American):</b></td>
+<td><input id="dollar" placeholder="USD"></td>
+</tr>
+
+
+
+<tr>
+<td><b>INR (India):</b></td>
+<td><input id="inr" placeholder="INR"></td>
+</tr>
+
+
+
+<tr>
+<td><b>EURO (UK):</b></td>
+<td> <input id="euro" placeholder="EURO"></td>
+</tr>
+
+
+
+<tr>
+<td><b>RIYAL (Saudi):</b></td>
+<td><input id="riyal" placeholder="RIYAL"></td>
+</tr>
+
+
+
+<tr>
+<td><input type="reset" Value="Reset"></td>
+</tr>
+
+
+
+<tr>
+<td colspan="2">Click Reset Button for resetting the form.</b></td>
+</tr>
+
+
+
+
+</table>
+</form>
+</div>
+
+<div class="footer">
+	<a href="https://www.facebook.com/shihabmahmudroxy" target="_blank" class="fa fa-facebook"></a>
+<a href="https://github.com/mdshihabmahmud" target="_blank" class="fa fa-github"></a>
+<a href="https://www.linkedin.com/in/mdshihabmahmud/" target="_blank" class="fa fa-linkedin"></a>
+</div>
+
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
